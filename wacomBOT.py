@@ -25,16 +25,16 @@ j = 461
 while (j > 452):
     time.sleep(.001)
     mouse.position = (905, j)
-    j -= 1
+    j -= 3
 
 while (i < 928):
     time.sleep(.001)
     mouse.position = (i, 452)
-    i+=1
+    i+=3
 
 mouse.position = (928, 452) ## PRIMEIRO CLIQUE DO DRAG
 mouse.press(Button.left)
-time.sleep(0.25)
+time.sleep(0.005)
 
 i = 928
 j = 452
@@ -42,19 +42,19 @@ j = 452
 while (j < 490):
     time.sleep(.001)
     mouse.position = (i, j)
-    j += 1
+    j += 3
 while (i < 980):
     time.sleep(.001)
     mouse.position = (i, j)
-    i+=1
+    i+=3
 
 mouse.position = (980, 490) ## ARRASTADA
 mouse.release(Button.left)
-time.sleep(1)
+time.sleep(0.25)
 
 mouse.position = (989, 497) ## MOVIMENTO PARA MOVIMENTAR A AREA
 mouse.press(Button.left)
-time.sleep(1)
+time.sleep(0.25)
 
 i = 989
 j = 497
@@ -62,12 +62,12 @@ j = 497
 while (j > 489):
     time.sleep(.001)
     mouse.position = (i, j)
-    j -= 1
+    j -= 3
 
 while (i > 980):
     time.sleep(.001)
     mouse.position = (i, j)
-    i-=1
+    i-=3
 
 mouse.position = (980, 489) ## MOVIMENTO PARA MOVIMENTAR A AREA
 mouse.release(Button.left)
